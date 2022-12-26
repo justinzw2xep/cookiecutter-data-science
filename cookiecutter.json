@@ -6,6 +6,6 @@
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
     "start_date": "{{ now() }}", 
-    "_extensions": ["jinja2_time.TimeExtension", "jinja2-time"]
+    "_extensions": ["jinja2_time.TimeExtension", "jinja2_time"]
 }
 
