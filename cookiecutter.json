@@ -1,10 +1,9 @@
 {
     "project_name": "project_name",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }} - {%now 'local'%}",
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
     "start_date": "{%now 'local' %}", 
-    "start_date2": "{% now '%B %-d, %Y %-I:%M' %}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
 
