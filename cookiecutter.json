@@ -1,15 +1,11 @@
-{% from dateutil.tz import tzlocal, tzutc %}
-{% from dateutil.parser import parse %}
-{% from dateutil.relativedelta import relativedelta %}
-{% import dateutil.rrule as rrule %}
-
 {
     "project_name": "project_name",
     "repo_name": "{%now 'local'%} {{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "repo_name2": "{{ cookiecutter.project_name.lower().replace(' ', '_')  }} - {{ now().strftime('%Y-%m-%d') }}"    ,
+    "date": "{% now.replace(cruise_date_start).format('%Y%m%d') %}",
+    "cruise_date_start": "{% now.format('%B %d, %Y') %}",
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
     "start_date": "{{ now() }}", 
-    "_extensions": ["jinja2_time.TimeExtension"]
+    "_extensions": ["jinja2_time.TimeExtension", "jinja2-time"]
 }
 
