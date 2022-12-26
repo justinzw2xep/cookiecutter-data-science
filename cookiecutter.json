@@ -1,7 +1,6 @@
 {
     "project_name": "project_name",
     "repo_name": "{%now 'local'%} {{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "cruise_date_start": "{% now.format('%B %d, %Y') %}",
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
     "start_date": "{{ now() }}", 
