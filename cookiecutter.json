@@ -4,6 +4,7 @@
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
     "start_date": "{% now 'local'.replace('-', '')%}", 
+    "start_date_t": "{{ date.strftime('%Y-%m-%d') }}",
     "testing":  "{%print('testinggggg!')%}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
