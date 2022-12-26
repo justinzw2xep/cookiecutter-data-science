@@ -3,8 +3,8 @@
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Your name (or your organization/company/team)",
     "description": "A short description of the project.",
-    "start_date": "{% now 'local'%}", 
-    "testing":  "{%print('testing')%}",
+    "start_date": "{% now 'local'.replace('-', '')%}", 
+    "testing":  "{%print('testinggggg!')%}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
 
